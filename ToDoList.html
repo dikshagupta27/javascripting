@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="C:\Program Files\Git\Documents\ToDoLis\list.css">
+<title></title></head>
+<body>
+<h1><u><b>MY TO DO LIST</b></u></h1>
+<input type="text" id="text-box" placeholder="Things to Add"/>
+<input type="button" id="btn" value="Add"/>
+<ul id='to_do_list'></ul>
+
+<script>
+var e=document.getElementById('text-box')
+console.log(e)
+var e1=document.getElementById('btn')
+console.log(e1)
+e1.addEventListener('click',AddElement)
+function AddElement()
+{
+var e2=document.createElement('li')
+console.log(e2)
+e2.textContent=e.value
+var e3=document.createElement('button')
+e3.innerHTML="Delete"
+var e4=document.getElementById('to_do_list')
+e4.appendChild(e2)
+e4.appendChild(e3)
+}
+
+
+</script>
+</body>
+</html>
